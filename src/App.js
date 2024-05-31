@@ -1,4 +1,4 @@
-import { HashRouter, Router, Routes, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Link } from "react-router-dom";
 import { useState } from "react";
 import Home from "./routers/Home";
 import About from "./routers/About";
@@ -9,14 +9,14 @@ function App() {
   const [searchResult, setSearchResult] = useState([]);
 
   return (
-    <HashRouter>
+    <Router>
       <Navbar setSearchResult={setSearchResult} />
       <Routes>
         <Link path={"/"} element={<Home searchResult={searchResult.results} />} />
         <Link path={"/about"} element={<About />} />
       </Routes>
       <Footer />
-    </HashRouter>
+    </Router>
   );
 }
 
