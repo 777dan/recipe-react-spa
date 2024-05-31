@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import Home from "./routers/Home";
 import About from "./routers/About";
@@ -12,8 +12,8 @@ function App() {
     <Router>
       <Navbar setSearchResult={setSearchResult} />
       <Routes>
-        <Route exact path={"#/"} element={<Home searchResult={searchResult.results} />} />
-        <Route exact path={"#/about"} element={<About />} />
+        <Route exact path={"/"} element={<Home searchResult={searchResult.results} />} />
+        <Route exact path={"/about"} element={<About />} />
       </Routes>
       <Footer />
     </Router>
