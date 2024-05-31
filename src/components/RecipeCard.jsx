@@ -14,7 +14,7 @@ const RecipeCard = ({ image, title, setCardDetails }) => {
     return (
         <div className="col-6 col-md-4 mb-4">
             <div className="card h-100" data-bs-toggle="modal" data-bs-target="#cardModal" onClick={(e) => getCardTitle(e)}>
-                <img src={image} className="card-img" />
+                <img src={image} alt="Recipe" className="card-img" />
                 <div className="card-body">
                     <h5 className="card-title">{title}</h5>
                 </div>
