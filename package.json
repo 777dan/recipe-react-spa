@@ -2,7 +2,7 @@
   "homepage": "https://777dan.github.io/recipe-react-spa",
   "name": "recipe-react-spa",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
